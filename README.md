@@ -8,7 +8,7 @@ A Python program I made that runs in the terminal. You type in what you spend, s
 
 ▶️ **[Watch my demo on YouTube](https://youtu.be/upLHSEuSh1k)**
 
-In the video I show the monthly summary, add a new expense, try a wrong amount to show the error check, make the charts, and walk through part of the code.
+In the video, I show the monthly summary, add a new expense, try a wrong amount to show the error check, make the charts, and walk through part of the code.
 
 ## Why I made it
 
@@ -19,7 +19,7 @@ I wanted a simple way to see where money goes each month, and I wanted to practi
 - **add** saves a new expense, e.g. `python3 expenses.py add 12.50 food "Chipotle"`
 - **list** shows all expenses for a month
 - **summary** shows the total for each category and how much of the budget is used
-- **budget** sets a monthly budget, e.g. `python3 expenses.py budget food 250`
+- **budget** sets a monthly budget, e.g. `python3 expenses.py budge`t food 250`
 - **chart** makes a picture with 3 charts of the month
 - It warns you when a category gets close to or goes over its budget
 - It won't save wrong input, like a negative amount or a category that isn't on the list
@@ -27,7 +27,7 @@ I wanted a simple way to see where money goes each month, and I wanted to practi
 The file `expenses.csv` has sample data for Sep–Nov 2026, so you can try it right away.
 <img width="575" height="282" alt="summary" src="https://github.com/user-attachments/assets/e0a178b6-e1e4-4e94-8762-4c79204c1df3" />
 
-*The summary for October. Food, groceries, transport and entertainment went over budget.*
+*The summary for October. Food, groceries, transport, and entertainment went over budget.*
 
 ## How it works
 
@@ -45,7 +45,7 @@ flowchart LR
 - Expenses are saved in a CSV file, so you can also open them in Excel.
 - Budgets are saved in a small JSON file.
 - Each command is its own function in `expenses.py`.
-- Before anything is saved, the program checks the amount, the category and the date.
+- Before anything is saved, the program checks the amount, the category, and the date.
 - The charts are made with matplotlib and saved as a PNG file.
 
 <img width="1470" height="956" alt="report" src="https://github.com/user-attachments/assets/ef957ade-c080-4757-87a9-408680e73454" />
@@ -54,6 +54,17 @@ flowchart LR
 *The 3 charts: where the money went, totals for each month, and spending through the month compared to the budget.*
 
 **Tools:** Python, matplotlib, Terminal, GitHub
+
+## Timeline
+
+November 2026:
+
+1. **Picked the idea** for my portfolio assignment: a terminal expense tracker with budgets and charts
+2. **Wrote the code** with help from an AI coding assistant
+3. **Set up Python on my Mac.** I hit the `externally-managed-environment` error and fixed it with a virtual environment
+4. **Ran and tested it:** summary, adding expenses, the error check, and the charts
+5. **Recorded the demo video** and uploaded it to YouTube
+6. **Uploaded the code, screenshots and this README** to GitHub
 
 ## How I built it
 
